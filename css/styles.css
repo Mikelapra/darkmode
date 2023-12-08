@@ -1,0 +1,180 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+body {
+	background-color: white;
+}
+
+body.darkMode{
+	background-color:black;
+}
+
+body.darkMode header p {
+	color:yellow;
+}
+
+body.darkMode .boton .dark {
+	color:white;
+}
+
+body.darkMode .texto h1 {
+	color:yellow;
+}
+
+body.darkMode .texto p {
+	color:white;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+    padding: 30px 50px;
+}
+
+header p{
+	font-weight: bold;
+	font-size: 30px;
+	color:black;
+	font-weight: bold;
+}
+
+.boton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.dark{
+	font-size:20px;
+	color: black;
+}
+
+.box {
+	background-color: #CBCBCB;
+	width:50px;
+	height: 20px;
+	padding: 5px 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	border-radius: 50px;
+	border: 1px solid black;
+}
+
+.box:hover {
+	cursor: pointer;
+}
+
+
+.sol {
+	background-color: yellow;
+	border-radius: 100%;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	padding: 1px;
+	padding-left:1px;
+}
+
+.luna {
+	background-color: blue;
+	border-radius: 100%;
+	align-items: center;
+	height: 20px;
+	width: 20px;
+	padding: 1px;
+	padding-left:1px;
+}
+
+.boton .box::before {
+	content:"";
+	position: absolute;
+	height: 26px;
+	width: 26px;
+	border-radius: 50%;
+	background-color: #CBCBCB;
+	right: 2px;
+	left:unset;
+}
+
+
+.boton .darkMode::before {
+	right:unset;
+	position: absolute;
+
+}
+
+
+h1{
+	font-size: 40px;
+	padding: 15px;
+	text-align: center;
+	color:black;
+	font-weight: bold;
+}
+
+
+p {
+	max-width:1000px;
+	text-align: left;
+	font-size: 20px;
+	color:black;
+}
+
+p.darkMode {
+	max-width:1000px;
+	text-align: left;
+	font-size: 20px;
+	color:white;
+}
+
